@@ -1,0 +1,27 @@
+Ce code met en place un reverse shell en Python, c’est-à-dire un outil qui permet à une machine distante de prendre le contrôle d’un terminal local via une connexion réseau. Voici une explication détaillée de ce qu’il fait, sans encourager ni promouvoir son usage malveillant:
+
+Exe
+Permet d’exécuter des commandes système (comme ls, dir, whoami, etc.).
+Utilise subprocess.run() pour lancer les commandes avec un timeout.
+Retourne les résultats bruts (stdout, stderr) ou un message d’erreur (TE pour Timeout Expired, FC pour Failure Command).
+ReverseSell
+Crée une connexion TCP sortante vers un hôte distant (IP + port).
+Une fois connecté, il attend des commandes à exécuter.
+Chaque commande reçue est exécutée via la classe Exe, et le résultat est renvoyé à l’émetteur.
+⚠️ Risques et implications
+
+Ce type de code est souvent utilisé dans des contextes de pentesting (test de sécurité autorisé) ou de cybersécurité offensive, mais il peut aussi être utilisé à des fins malveillantes s’il est déployé sans consentement.
+
+Voici ce qu’il permet concrètement :
+
+📡 Établir une connexion vers un serveur distant.
+🖥️ Exécuter des commandes sur la machine locale à distance.
+📤 Renvoyer les résultats au serveur.
+🛠️ Utilisation légitime possible
+
+Si tu bosses sur un projet de simulation de sécurité, de formation en cybersécurité, ou de test de robustesse réseau, ce genre de script peut être utile pour :
+
+Tester la détection d’un reverse shell par un antivirus.
+Simuler une attaque pour entraîner une équipe SOC.
+Comprendre les mécanismes de communication réseau et d’exécution distante.
+Mais attention : toute utilisation sur une machine sans autorisation explicite est illégale.
