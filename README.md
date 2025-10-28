@@ -26,7 +26,7 @@ Je cherche à collaborer sur des projets intéressants dans les domaines :
 
 # 📫 Comment me contacter
 
-- *Email : chacoulsanogo77@gmail.com
+- *Email : chacoul-7@protonmail.ch
 
 ⚡ Fun fact
 
