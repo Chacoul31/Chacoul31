@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Premier Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #0078ff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Bienvenue sur mon site !</h1>
+        <p>Ce site est hébergé avec GitHub Pages.</p>
+        <button onclick="bonjour()">Clique ici</button>
+    </div>
+
+    <script>
+        function bonjour() {
+            alert("Bravo ! JavaScript fonctionne.");
+        }
+    </script>
+</body>
+</html>
